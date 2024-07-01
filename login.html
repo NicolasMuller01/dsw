@@ -59,7 +59,9 @@
             >Recordar Contraseña</label
           >
         </div>
-        <button type="submit" class="btn btn-primary">Ingresar</button>
+        <button type="button" class="btn btn-primary" id="loginBtn">
+          Ingresar
+        </button>
         <button type="button" class="btn btn-link" id="forgotPasswordBtn">
           Recuperar Contraseña
         </button>
@@ -131,6 +133,12 @@
         .addEventListener("click", function () {
           document.getElementById("loginForm").style.display = "none";
           document.getElementById("recoverForm").style.display = "block";
+        });
+
+      document
+        .getElementById("loginBtn")
+        .addEventListener("click", function () {
+          window.location.href = "main.html";
         });
     </script>
     <script
